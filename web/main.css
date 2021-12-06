@@ -1,5 +1,6 @@
 *{
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
 }
 body{
     background: #FF5F6D; /*fallback for old browser*/
@@ -10,5 +11,41 @@ body{
 }
 
 #location{
-    
+    display: block;
+    border: none;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 30px;  
+}
+#location::placeholder{
+    color:rgba(255, 255, 255, .3);
+}
+#show{
+    display: block;
+    border: none;
+    margin-top: 15px;
+
+    background: #16BFFD; /*fallback for old browser*/
+    background: -webkit-linear-gradient(to right, #CB3066, #16BFFD); /*Chrome 10-25, Saf*/
+    background: linear-gradient(to right, #CB3066, #16BFFD);
+
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+#show:hover{
+    opacity: .9;
+}
+#info {
+    margin-top: 20px;
 }
